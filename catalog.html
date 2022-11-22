@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Hello, world!!!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.12/css/uikit.min.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/uikit-reset.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.js"></script> -->
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
+</head>
+
+<body>
+    <div class="uk-container uk-container-large">
+        <nav class="TopNavbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-right uk-visible@m">
+                <ul class="uk-navbar-nav">
+                    <li><a href="">О компании</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="">Магазины и склады</a></li>
+                    <li><a href="">Представители</a></li>
+                    <li><a href="">Сотрудничество</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right uk-hidden@m">
+                <ul class="uk-navbar-nav">
+                    <li><button class="uk-navbar-toggle" uk-navbar-toggle-icon
+                            uk-toggle="target: #NavOffcanvas"></button></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="Top uk-flex-middle uk-grid-large" uk-grid>
+            <div class="uk-width-1-1 uk-width-1-5@m"><a href="/"><img src="content/logo.png" alt=""></a></div>
+            <div class="uk-width-auto@s uk-visible@m">
+                <div>Россия, г. Пенза,</div>
+                <div>проезд Германа Титова, 1</div>
+                <div>8:00 — 18:00 мск</div>
+            </div>
+            <div class="uk-width-expand@l uk-text-center">
+                <div class="uk-margin-small-bottom"><a class="uk-text-large uk-link-reset" href="">8 (8412)
+                        98-20-78</a></div>
+                <button class="uk-button uk-button-default uk-button-small" uk-toggle="target: #ZacazModal">Обратный
+                    звонок</button>
+            </div>
+            <div class="uk-width-auto@l uk-visible@s uk-text-center">
+                <button class="uk-button uk-button-link"><span class="file-pdf"
+                        uk-icon="icon: file-pdf; ratio: 1.5"></span><span>Скачать каталог</span><span
+                        uk-icon="icon:  triangle-down"></span></button>
+                <div class="uk-width-large uk-padding-small" uk-dropdown>
+                    <div class="uk-dropdown-grid uk-child-width-1-2 uk-grid-column-small" uk-grid>
+                        <div>
+                            <a href=""><img src="content/cat2.png"></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="content/cat2.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="NavOffcanvas" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li><a href="">О компании</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="">Магазины и склады</a></li>
+                <li><a href="">Представители</a></li>
+                <li><a href="">Сотрудничество</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="ZacazModal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h4 class="uk-modal-title">Обратный звонок</h4>
+            <form>
+                <fieldset class="uk-fieldset">
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Имя*">
+                    </div>
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Город*">
+                    </div>
+                    <div class="uk-margin">
+                        <input class="uk-input" type="tel" placeholder="Телефон*">
+                    </div>
+                    <button class="uk-button uk-button-primary uk-width-1-1">Заказать звонок</button>
+                </fieldset>
+            </form>
+            </p>
+        </div>
+    </div>
+
+    <div class="uk-container uk-container-large uk-margin-large-top">
+        <nav class="CatalogNav uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-center uk-visible@m">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#">Кухни</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Готовые решения ЛДСП</a></li>
+                                <li><a href="#">Фотопечать ЛДСП</a></li>
+                                <li><a href="#">Фотопечать МДФ</a></li>
+                                <li><a href="#">Модульные кухни</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Гостиные</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Гостиные готовые решения</a></li>
+                                <li><a href="#">Гостиные модульные системы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Спальные гарнитуры</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Спальни готовые решения</a></li>
+                                <li><a href="#">Спальни модульные системы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Прихожие</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Прихожие готовые решения</a></li>
+                                <li><a href="#">Прихожие модульные системы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Шкафы и шкафы-купе</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Шкафы-купе</a></li>
+                                <li><a href="#">Шкафы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Малые формы</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Комоды</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Мягкая мебель</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Диваны</a></li>
+                                <li><a href="#">Кресла</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Товары для сна</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">Матрасы</a></li>
+                                <li><a href="#">Подушки</a></li>
+                                <li><a href="#">Защитные чехлы и топперы</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="NavCatalog" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar uk-background-default">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li><a href="#">Готовые решения ЛДСП</a></li>
+                <li><a href="#">Фотопечать ЛДСП</a></li>
+                <li><a href="#">Фотопечать МДФ</a></li>
+                <li><a href="#">Модульные кухни</a></li>
+                <li><a href="#">Гостиные готовые решения</a></li>
+                <li><a href="#">Гостиные модульные системы</a></li>
+                <li><a href="#">Спальни готовые решения</a></li>
+                <li><a href="#">Спальни модульные системы</a></li>
+                <li><a href="#">Прихожие готовые решения</a></li>
+                <li><a href="#">Прихожие модульные системы</a></li>
+                <li><a href="#">Шкафы-купе</a></li>
+                <li><a href="#">Шкафы</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="uk-padding-large uk-padding-remove-horizontal">
+        <div class="uk-container uk-container-large">
+            <div class="uk-grid-large" uk-grid>
+                <div class="uk-width-1-5 uk-visible@m"></div>
+                <div class="uk-width-expand uk-visible@m">
+                    <nav>
+                        <ul class="uk-breadcrumb uk-margin-remove">
+                            <li><a href="#">Главная</a></li>
+                            <li class="uk-disabled"><a>Каталог</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="uk-width-expand uk-hidden@m">
+                    <ul class="uk-navbar-nav">
+                        <li><button class="uk-button uk-button-link" uk-toggle="target: #NavCatalog"><span
+                                    uk-icon="icon: list"></span> Каталог мебели</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-grid-large uk-margin-top" uk-grid>
+                <div class="FilterCatalog uk-width-1-1@s uk-width-1-5@m">
+                    <div class="uk-padding-small uk-background-muted">
+                        <!-- <div class="uk-margin">
+                    <button class="uk-button uk-button-link uk-width-1-1" type="button">Категория <span
+                            uk-icon="icon: triangle-down"></span></button>
+                    <div uk-dropdown="mode: click">123</div>
+                </div>
+                <div class="uk-margin">
+                    <button class="uk-button uk-button-link uk-width-1-1" type="button">Подкатегория <span
+                            uk-icon="icon: triangle-down"></span></button>
+                    <div uk-dropdown="mode: click">123</div>
+                </div>
+                <div class="uk-margin">
+                    <button class="uk-button uk-button-link uk-width-1-1" type="button">Цвета <span
+                            uk-icon="icon: triangle-down"></span></button>
+                    <div uk-dropdown="mode: click">123</div>
+                </div> -->
+                        <ul class="uk-margin-remove" uk-accordion>
+                            <li>
+                                <a class="uk-accordion-title" href="#">Категория</a>
+                                <div class="uk-accordion-content uk-margin-remove">
+                                    <div class="uk-margin-small-top uk-margin-small-left">
+                                        <ul class="uk-nav uk-nav-default">
+                                            <li><a href="#">Кухни</a></li>
+                                            <li><a href="#">Гостиные</a></li>
+                                            <li><a href="#">Спальные гарнитуры</a></li>
+                                            <li><a href="#">Прихожие</a></li>
+                                            <li><a href="#">Шкафы и шкафы-купе</a></li>
+                                            <li><a href="#">Малые формы</a></li>
+                                            <li><a href="#">Мягкая мебель</a></li>
+                                            <li><a href="#">Товары для сна</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">Подкатегория</a>
+                                <div class="uk-accordion-content uk-margin-remove">
+                                    <div class="uk-margin-small-top uk-margin-small-left">
+                                        <ul class="uk-nav uk-nav-default">
+                                            <li><a href="#">Готовые решения ЛДСП</a></li>
+                                            <li><a href="#">Фотопечать ЛДСП</a></li>
+                                            <li><a href="#">Фотопечать МДФ</a></li>
+                                            <li><a href="#">Модульные кухни</a></li>
+                                            <li><a href="#">Гостиные готовые решения</a></li>
+                                            <li><a href="#">Гостиные модульные системы</a></li>
+                                            <li><a href="#">Спальни готовые решения</a></li>
+                                            <li><a href="#">Спальни модульные системы</a></li>
+                                            <li><a href="#">Прихожие готовые решения</a></li>
+                                            <li><a href="#">Прихожие модульные системы</a></li>
+                                            <li><a href="#">Шкафы-купе</a></li>
+                                            <li><a href="#">Шкафы</a></li>
+                                            <li><a href="#">Комоды</a></li>
+                                            <li><a href="#">Диваны</a></li>
+                                            <li><a href="#">Кресла</a></li>
+                                            <li><a href="#">Матрасы</a></li>
+                                            <li><a href="#">Подушки</a></li>
+                                            <li><a href="#">Защитные чехлы и топперы</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">Цвета</a>
+                                <div class="uk-accordion-content uk-margin-remove">
+                                    <div class="uk-margin-small-top uk-margin-small-left">
+                                        <ul class="uk-nav uk-nav-default">
+                                            <li><a href="#">Светлые</a></li>
+                                            <li><a href="#">Темные</a></li>
+                                            <li><a href="#">Цветные</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-width-expand">
+                    <div class="uk-child-width-1-2@s uk-child-width-1-3@xl" uk-grid
+                        uk-height-match="target: > div > a > .uk-card">
+                        <div>
+                            <a class="uk-link-reset" href="item.html">
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top uk-cover-container">
+                                        <canvas width="300" height="200"></canvas>
+                                        <img src="content/item/i/2.webp" alt="" uk-cover>
+                                        <div class="uk-position-top-right uk-overlay"><span class="uk-badge">Новинка</span></div>
+                                    </div>
+                                    <div class="uk-card-body uk-padding-small">
+                                        <h3 class="uk-card-title">Бостон</h3>
+                                        <p>2320*1000*1030, 2320*680*1490, 1900*1400, Велюр, Тик-Так</p>
+                                        <div class="uk-child-width-1-1" uk-grid>
+                                            <div>
+                                                <div class="uk-margin-small-bottom uk-text-meta">Варианты исполнения:
+                                                </div>
+                                                <div class="uk-grid-small uk-child-width-1-6" uk-grid>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/item/m/L002.webp">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/item/m/L002.webp" width="200px"
+                                                                height="200px">
+                                                            <div
+                                                                class="uk-position-small uk-position-center uk-padding-small uk-background-secondary uk-light uk-text-center uk-text-small">
+                                                                Бежевый</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/item/m/L004.webp">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/item/m/L004.webp" width="200px"
+                                                                height="200px">
+                                                            <div
+                                                                class="uk-position-small uk-position-center uk-padding-small uk-background-secondary uk-light uk-text-center uk-text-small">
+                                                                Коричневый</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/item/m/L007-bk.webp">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/item/m/L007-bk.webp" width="200px"
+                                                                height="200px">
+                                                            <div
+                                                                class="uk-position-small uk-position-center uk-padding-small uk-background-secondary uk-light uk-text-center uk-text-small">
+                                                                Синий/Белая кожа</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/item/m/L008-bk.webp">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/item/m/L008-bk.webp" width="200px"
+                                                                height="200px">
+                                                            <div
+                                                                class="uk-position-small uk-position-center uk-padding-small uk-background-secondary uk-light uk-text-center uk-text-small">
+                                                                Голубой/Белая кожа</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/item/m/L009.webp">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/item/m/L009.webp" width="200px"
+                                                                height="200px">
+                                                            <div
+                                                                class="uk-position-small uk-position-center uk-padding-small uk-background-secondary uk-light uk-text-center uk-text-small">
+                                                                Светло-бежевый</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/item/m/L010-bk.webp">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/item/m/L010-bk.webp" width="200px"
+                                                                height="200px">
+                                                            <div
+                                                                class="uk-position-small uk-position-center uk-padding-small uk-background-secondary uk-light uk-text-center uk-text-small">
+                                                                Сиреневый/Белая кожа</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/item/m/L011-bk.webp">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/item/m/L011-bk.webp" width="200px"
+                                                                height="200px">
+                                                            <div
+                                                                class="uk-position-small uk-position-center uk-padding-small uk-background-secondary uk-light uk-text-center uk-text-small">
+                                                                Бирюзовый/Белая кожа</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/item/m/L015-bk.webp">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/item/m/L015-bk.webp" width="200px"
+                                                                height="200px">
+                                                            <div
+                                                                class="uk-position-small uk-position-center uk-padding-small uk-background-secondary uk-light uk-text-center uk-text-small">
+                                                                Розовый/Белая кожа</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/item/m/L016-bk.webp">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/item/m/L016-bk.webp" width="200px"
+                                                                height="200px">
+                                                            <div
+                                                                class="uk-position-small uk-position-center uk-padding-small uk-background-secondary uk-light uk-text-center uk-text-small">
+                                                                Фиолетовый/Белая кожа</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-link-reset" href="item.html">
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top uk-cover-container">
+                                        <canvas width="300" height="200"></canvas>
+                                        <img src="content/cat.png" alt="" uk-cover>
+                                    </div>
+                                    <div class="uk-card-body uk-padding-small">
+                                        <h3 class="uk-card-title">Название</h3>
+                                        <p>Описание ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt.</p>
+                                        <div class="uk-child-width-1-2@m" uk-grid>
+                                            <div>
+                                                <div class="uk-margin-small-bottom uk-text-meta">Варианты фасадов:</div>
+                                                <div class="uk-grid-small uk-child-width-1-4 uk-child-width-1-2@m"
+                                                    uk-grid>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/mat.png">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/mat.png" width="200px" height="200px">
+                                                            <div class="uk-position-center">Название/Название</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/mat.png">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/mat.png" width="200px" height="200px">
+                                                            <div class="uk-position-center">Название/Название</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-margin-small-bottom uk-text-meta">Варианты столов:</div>
+                                                <div class="uk-grid-small uk-child-width-1-4 uk-child-width-1-2@m"
+                                                    uk-grid>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/mat.png">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/mat.png" width="200px" height="200px">
+                                                            <div class="uk-position-center">Название/Название</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/mat.png">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/mat.png" width="200px" height="200px">
+                                                            <div class="uk-position-center">Название/Название</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-link-reset" href="item.html">
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top uk-cover-container">
+                                        <canvas width="300" height="200"></canvas>
+                                        <img src="content/cat.png" alt="" uk-cover>
+                                    </div>
+                                    <div class="uk-card-body uk-padding-small">
+                                        <h3 class="uk-card-title">Название</h3>
+                                        <p>Описание ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt.</p>
+                                        <div class="uk-child-width-1-2@m" uk-grid>
+                                            <div>
+                                                <div class="uk-margin-small-bottom uk-text-meta">Варианты фасадов:</div>
+                                                <div class="uk-grid-small uk-child-width-1-4 uk-child-width-1-2@m"
+                                                    uk-grid>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/mat.png">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/mat.png" width="200px" height="200px">
+                                                            <div class="uk-position-center">Название/Название</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/mat.png">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/mat.png" width="200px" height="200px">
+                                                            <div class="uk-position-center">Название/Название</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="uk-margin-small-bottom uk-text-meta">Варианты столов:</div>
+                                                <div class="uk-grid-small uk-child-width-1-4 uk-child-width-1-2@m"
+                                                    uk-grid>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/mat.png">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/mat.png" width="200px" height="200px">
+                                                            <div class="uk-position-center">Название/Название</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <img class="uk-border-circle" src="content/mat.png">
+                                                        <div class="uk-padding-remove" uk-dropdown><img
+                                                                src="content/mat.png" width="200px" height="200px">
+                                                            <div class="uk-position-center">Название/Название</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="uk-section uk-section-secondary">
+        <div class="uk-container uk-container-large">
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-1-6@m uk-text-center">
+                    <img src="content/logo2.png" alt="">
+                    <span class="uk-text-small">© 2013 — 2022 ООО Дисави</span>
+                </div>
+                <div class="uk-width-expand@m">
+                    <ul class="uk-subnav uk-flex-center">
+                        <li><a href="">О компании</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="">Магазины и склады</a></li>
+                        <li><a href="">Представители</a></li>
+                        <li><a href="">Сотрудничество</a></li>
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>Россия, г. Пенза,</div>
+                    <div>проезд Германа Титова, 1</div>
+                    <div>8:00 — 18:00 мск</div>
+                    <div><a class="uk-link-reset" href="">8 (8412)
+                            98-20-78</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.12/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.12/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

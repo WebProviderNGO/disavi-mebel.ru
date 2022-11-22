@@ -15,6 +15,316 @@
 </head>
 
 <body>
+    <div class="uk-position-absolute uk-visible@s" style="z-index: -1; left: -150px;"><img src="assets/images/g9209.svg"
+            alt="" width="540" style="opacity: 0.5;"></div>
+    <div class="uk-position-absolute uk-visible@s" style="z-index: -1; right: -150px;"><img
+            src="assets/images/g92092.svg" alt="" width="540" style="opacity: 0.5;"></div>
+    <div class="uk-container uk-container-large">
+        <nav class="TopNavbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-right uk-visible@m">
+                <ul class="uk-navbar-nav">
+                    <li><a href="">О компании</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="">Магазины и склады</a></li>
+                    <li><a href="">Представители</a></li>
+                    <li><a href="">Сотрудничество</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right uk-hidden@m">
+                <ul class="uk-navbar-nav">
+                    <li><button class="uk-navbar-toggle" uk-navbar-toggle-icon
+                            uk-toggle="target: #NavOffcanvas"></button></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="Top uk-flex-middle uk-grid-large" uk-grid>
+            <div class="uk-width-1-1 uk-width-1-5@m"><a href="/"><img src="content/logo.png" alt=""></a></div>
+            <div class="uk-width-auto@s uk-visible@m">
+                <div>Россия, г. Пенза,</div>
+                <div>проезд Германа Титова, 1</div>
+                <div>8:00 — 18:00 мск</div>
+            </div>
+            <div class="uk-width-expand@l uk-text-center">
+                <div class="uk-margin-small-bottom"><a class="uk-text-large uk-link-reset" href="">8 (8412)
+                        98-20-78</a></div>
+                <button class="uk-button uk-button-default uk-button-small" uk-toggle="target: #ZacazModal">Обратный
+                    звонок</button>
+            </div>
+            <div class="uk-width-auto@l uk-visible@s uk-text-center">
+                <button class="uk-button uk-button-link"><span class="file-pdf"
+                        uk-icon="icon: file-pdf; ratio: 1.5"></span><span>Скачать каталог</span><span
+                        uk-icon="icon:  triangle-down"></span></button>
+                <div class="uk-width-large uk-padding-small" uk-dropdown>
+                    <div class="uk-dropdown-grid uk-child-width-1-2 uk-grid-column-small" uk-grid>
+                        <div>
+                            <a href=""><img src="content/cat2.png"></a>
+                        </div>
+                        <div>
+                            <a href=""><img src="content/cat2.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="NavOffcanvas" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li><a href="">О компании</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="">Магазины и склады</a></li>
+                <li><a href="">Представители</a></li>
+                <li><a href="">Сотрудничество</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="ZacazModal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h4 class="uk-modal-title">Обратный звонок</h4>
+            <form>
+                <fieldset class="uk-fieldset">
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Имя*">
+                    </div>
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Город*">
+                    </div>
+                    <div class="uk-margin">
+                        <input class="uk-input" type="tel" placeholder="Телефон*">
+                    </div>
+                    <button class="uk-button uk-button-primary uk-width-1-1">Заказать звонок</button>
+                </fieldset>
+            </form>
+            </p>
+        </div>
+    </div>
+
+    <section class="HomeCatNav uk-section">
+        <div class="uk-container uk-container-large">
+            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-column-small uk-grid-row-medium" uk-grid>
+                <div>
+                    <h3 class="uk-margin-small-bottom"><a href="">Кухни</a></h3>
+                    <div class="uk-cover-container uk-margin-small-bottom">
+                        <canvas width="360" height="250"></canvas>
+                        <img src="content/home/1.webp" alt="" uk-cover>
+                    </div>
+                    <h4 class="uk-margin-remove"><a href="">Готовые решения ЛДСП</a></h4>
+                    <h4 class="uk-margin-remove"><a href="">Фотопечать ЛДСП</a></h4>
+                    <h4 class="uk-margin-remove"><a href="">Фотопечать МДФ</a></h4>
+                    <h4 class="uk-margin-remove"><a href="">Модульные кухни</a></h4>
+                </div>
+                <div>
+                    <h3 class="uk-margin-small-bottom"><a href="">Гостиные</a></h3>
+                    <div class="uk-cover-container uk-margin-small-bottom">
+                        <canvas width="360" height="250"></canvas>
+                        <img src="content/home/2.webp" alt="" uk-cover>
+                    </div>
+                    <h4 class="uk-margin-remove"><a href="">Гостиные готовые решения</a></h4>
+                    <h4 class="uk-margin-remove"><a href="">Гостиные модульные системы</a></h4>
+                </div>
+                <div>
+                    <h3 class="uk-margin-small-bottom"><a href="">Спальные гарнитуры</a></h3>
+                    <div class="uk-cover-container uk-margin-small-bottom">
+                        <canvas width="360" height="250"></canvas>
+                        <img src="content/home/3.webp" alt="" uk-cover>
+                    </div>
+                    <h4 class="uk-margin-remove"><a href="">Спальни готовые решения</a></h4>
+                    <h4 class="uk-margin-remove"><a href="">Спальни модульные системы</a></h4>
+                </div>
+                <div>
+                    <h3 class="uk-margin-small-bottom"><a href="">Прихожие</a></h3>
+                    <div class="uk-cover-container uk-margin-small-bottom">
+                        <canvas width="360" height="250"></canvas>
+                        <img src="content/home/4.webp" alt="" uk-cover>
+                    </div>
+                    <h4 class="uk-margin-remove"><a href="">Прихожие готовые решения</a></h4>
+                    <h4 class="uk-margin-remove"><a href="">Прихожие модульные системы</a></h4>
+                </div>
+                <div>
+                    <h3 class="uk-margin-small-bottom"><a href="">Шкафы и шкафы-купе</a></h3>
+                    <div class="uk-cover-container uk-margin-small-bottom">
+                        <canvas width="360" height="250"></canvas>
+                        <img src="content/home/5.webp" alt="" uk-cover>
+                    </div>
+                    <h4 class="uk-margin-remove"><a href="">Шкафы-купе</a></h4>
+                    <h4 class="uk-margin-remove"><a href="">Шкафы</a></h4>
+                </div>
+                <div>
+                    <h3 class="uk-margin-small-bottom"><a href="">Малые формы</a></h3>
+                    <div class="uk-cover-container uk-margin-small-bottom">
+                        <canvas width="360" height="250"></canvas>
+                        <img src="content/home/6.webp" alt="" uk-cover>
+                    </div>
+                    <h4 class="uk-margin-remove"><a href="">Комоды</a></h4>
+                </div>
+                <div>
+                    <h3 class="uk-margin-small-bottom"><a href="">Мягкая мебель</a></h3>
+                    <div class="uk-cover-container uk-margin-small-bottom">
+                        <canvas width="360" height="250"></canvas>
+                        <img src="content/home/7.webp" alt="" uk-cover>
+                    </div>
+                    <h4 class="uk-margin-remove"><a href="">Диваны</a></h4>
+                    <h4 class="uk-margin-remove"><a href="">Кресла</a></h4>
+                </div>
+                <div>
+                    <h3 class="uk-margin-small-bottom"><a href="">Товары для сна</a></h3>
+                    <div class="uk-cover-container uk-margin-small-bottom">
+                        <canvas width="360" height="250"></canvas>
+                        <img src="content/home/8.webp" alt="" uk-cover>
+                    </div>
+                    <h4 class="uk-margin-remove"><a href="">Матрасы</a></h4>
+                    <h4 class="uk-margin-remove"><a href="">Подушки</a></h4>
+                    <h4 class="uk-margin-remove"><a href="">Защитные чехлы и топперы</a></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="HomeFav uk-section-default">
+        <div class="uk-section uk-section-large uk-background-cover uk-panel uk-light"
+            style="background-image: url(content/istockphoto-1094011018-170667a-gigapixel-standard-width-1920px.jpg)">
+            <div class="uk-overlay-primary uk-position-cover"></div>
+            <div class="uk-panel">
+                <div class="uk-container uk-container-expand">
+                    <h3 class="uk-margin-large-bottom uk-text-center"><span>Мы уже более 9 лет работаем на рынке
+                            корпусной мебели</span></h3>
+                    <div class="uk-child-width-1-3@s uk-child-width-1-6@m uk-grid-large uk-text-center" uk-grid>
+                        <div>
+                            <img class="uk-visible@s" class="uk-visible@s" src="content/face-smile-beam.svg" alt="">
+                            <h4 class="uk-margin-small">Подход</h4>
+                            <div>Приоритет компании — индивидуальный подход к каждому клиенту</div>
+                        </div>
+                        <div>
+                            <img class="uk-visible@s" src="content/thumbs-up.svg" alt="">
+                            <h4 class="uk-margin-small">Качество</h4>
+                            <div>Продукция лучшего качества по доступной цене</div>
+                        </div>
+                        <div>
+                            <img class="uk-visible@s" src="content/info.svg" alt="">
+                            <h4 class="uk-margin-small">Информация</h4>
+                            <div>Своевременно информируем об изменениях модельного ряда, ценовой категории и новинок
+                            </div>
+                        </div>
+                        <div>
+                            <img class="uk-visible@s" src="content/percent.svg" alt="">
+                            <h4 class="uk-margin-small">Скидки</h4>
+                            <div>Постоянно действующая гибкая система скидок, для оптовых и постоянных клиентов</div>
+                        </div>
+                        <div>
+                            <img class="uk-visible@s" src="content/rocket.svg" alt="">
+                            <h4 class="uk-margin-small">Поставка</h4>
+                            <div>Соблюдение поставок продукции в короткие сроки</div>
+                        </div>
+                        <div>
+                            <img class="uk-visible@s" src="content/warehouse.svg" alt="">
+                            <h4 class="uk-margin-small">Склад</h4>
+                            <div>Обширная складская программа</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section uk-section-default">
+        <div class="uk-container uk-container-large">
+            <div uk-slider="autoplay: true; autoplay-interval: 2500">
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+                    <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
+                        <li>
+                            <div class="uk-panel uk-cover-container">
+                                <canvas width="500" height="350"></canvas>
+                                <a href=""><img src="content/home/1.webp" uk-cover></a>
+                                <div class="uk-margin-small-left uk-margin-small-bottom uk-position-bottom-left uk-overlay uk-overlay-default">Название</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-panel uk-cover-container">
+                                <canvas width="500" height="350"></canvas>
+                                <a href=""><img src="content/home/2.webp" uk-cover></a>
+                                <div class="uk-margin-small-left uk-margin-small-bottom uk-position-bottom-left uk-overlay uk-overlay-default">Название</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-panel uk-cover-container">
+                                <canvas width="500" height="350"></canvas>
+                                <a href=""><img src="content/home/3.webp" uk-cover></a>
+                                <div class="uk-margin-small-left uk-margin-small-bottom uk-position-bottom-left uk-overlay uk-overlay-default">Название</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-panel uk-cover-container">
+                                <canvas width="500" height="350"></canvas>
+                                <a href=""><img src="content/home/4.webp" uk-cover></a>
+                                <div class="uk-margin-small-left uk-margin-small-bottom uk-position-bottom-left uk-overlay uk-overlay-default">Название</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-panel uk-cover-container">
+                                <canvas width="500" height="350"></canvas>
+                                <a href=""><img src="content/home/5.webp" uk-cover></a>
+                                <div class="uk-margin-small-left uk-margin-small-bottom uk-position-bottom-left uk-overlay uk-overlay-default">Название</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-panel uk-cover-container">
+                                <canvas width="500" height="350"></canvas>
+                                <a href=""><img src="content/home/6.webp" uk-cover></a>
+                                <div class="uk-margin-small-left uk-margin-small-bottom uk-position-bottom-left uk-overlay uk-overlay-default">Название</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-panel uk-cover-container">
+                                <canvas width="500" height="350"></canvas>
+                                <a href=""><img src="content/home/7.webp" uk-cover></a>
+                                <div class="uk-margin-small-left uk-margin-small-bottom uk-position-bottom-left uk-overlay uk-overlay-default">Название</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                        uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                        uk-slider-item="next"></a>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="uk-section uk-section-secondary">
+        <div class="uk-container uk-container-large">
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-1-6@m uk-text-center">
+                    <img src="content/logo2.png" alt="">
+                    <span class="uk-text-small">© 2013 — 2022 ООО Дисави</span>
+                </div>
+                <div class="uk-width-expand@m">
+                    <ul class="uk-subnav uk-flex-center">
+                        <li><a href="">О компании</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="">Магазины и склады</a></li>
+                        <li><a href="">Представители</a></li>
+                        <li><a href="">Сотрудничество</a></li>
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>Россия, г. Пенза,</div>
+                    <div>проезд Германа Титова, 1</div>
+                    <div>8:00 — 18:00 мск</div>
+                    <div><a class="uk-link-reset" href="">8 (8412)
+                            98-20-78</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.12/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.12/js/uikit-icons.min.js"></script>

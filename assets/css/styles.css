@@ -1,6 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
 
 html {
-    --PrimaryColor: #1e87f0;
-    --SecondaryColor: #fbda0c;
+    --PrimaryColor: #4b549a;
+    --PrimaryColorHover: #292e52;
+    --SecondaryColor: #101212;
+    scrollbar-color: var(--PrimaryColor) white;
+}
+
+html::-webkit-scrollbar,
+.ItemThumbnav::-webkit-scrollbar {
+    width: 6px;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track,
+.ItemThumbnav::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb,
+.ItemThumbnav::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--PrimaryColor);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html,
+body,
+h3,
+h4,
+.uk-navbar-nav>li>a,
+.uk-button,
+.uk-heading-small {
+    font-family: 'Jost', sans-serif;
+    font-variant-numeric: lining-nums;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+.TopNavbar .uk-navbar-nav>li>a,
+.TopNavbar .uk-navbar-toggle {
+    min-height: 42px;
+    font-size: 0.7rem;
+    color: var(--PrimaryColor);
+    font-weight: 500;
+}
+
+.TopNavbar .uk-navbar-nav>li>a:hover,
+.TopNavbar .uk-navbar-toggle:hover {
+    color: var(--PrimaryColorHover);
+}
+
+.Top .uk-text-large {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.Top .uk-link-reset {
+    color: var(--SecondaryColor) !important;
+}
+
+.Top .uk-button-link {
+    font-weight: 500;
+}
+
+.Top .uk-button-link:hover {
+    color: black;
+}
+
+.file-pdf {
+    color: red;
+}
+
+#NavOffcanvas .uk-offcanvas-bar {
+    background: var(--PrimaryColor);
+}
+
+#ZacazModal .uk-modal-dialog {
+    width: 300px;
+}
+
+#ZacazModal .uk-modal-title {
+    font-size: 1.5rem;
+}
+
+.HomeCatNav h3 {
+    font-size: 1.25rem;
+}
+
+.HomeCatNav h3>a {
+    color: var(--PrimaryColor);
+}
+
+.HomeCatNav h4 {
+    font-size: 1rem;
+}
+
+.HomeCatNav h4>a {
+    color: var(--SecondaryColor);
+}
+
+.HomeFav .uk-overlay-primary {
+    background-color: rgba(75, 84, 154, 0.8);
+}
+
+.HomeFav h3 {
+    font-weight: 300;
+}
+
+.HomeFav svg {
+    height: 100px;
+    fill: var(--PrimaryColor);
+    stroke: white;
+    stroke-width: 10px;
+}
+
+.HomeFav img {
+    height: 100px;
+}
+
+.HomeFav h4 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.CatalogNav .uk-navbar-nav>li>a,
+.CatalogNav .uk-navbar-toggle {
+    min-height: 0;
+}
+
+.FilterCatalog .uk-accordion-title {
+    font-size: 1rem;
+  }
+
+.FilterCatalog button {
+    font-weight: 500;
+}
+
+.FilterCatalog .uk-icon {
+    color: var(--PrimaryColor);
+}
+
+.ItemInfo .uk-divider-vertical {
+    height: 100%;
+}
+
+.ItemInfo-Mat .uk-padding-small {
+    padding: 5px;
+}
+
+.ItemInfo-Mat .uk-background-secondary {
+    background-color: rgba(34, 34, 34, 0.75);
+}
+
+#NavCatalog .uk-offcanvas-bar .uk-nav-primary>li>a {
+    color: var(--PrimaryColor);
+}
+
+#NavCatalog .uk-nav-primary {
+    font-size: 1rem;
+}
+
+#NavCatalog .uk-offcanvas-bar .uk-close {
+    color: black;
 }
